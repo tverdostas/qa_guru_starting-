@@ -55,7 +55,7 @@ public class SearchTests {
         $("[id=stat]").shouldHave(text("Statistics"));
     }
 
-/*    @Test
+/*    @Test // тест не работает
     void successfulLogoutTest(){
         open("https://auth.niffler.qa.guru/login");
         $("[name=username]").setValue("qaguru31");
