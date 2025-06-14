@@ -55,6 +55,14 @@ public class SearchTests {
         $("[id=stat]").shouldHave(text("Statistics"));
     }
 
+    @Test
+    void searchYandexTest() {
+        open("https://ya.ru/");
+        $("[name=text]").setValue("selenide").pressEnter();
+        $("button[class*='Distribution-ButtonClose']").click();
+        $("[id='search-result']").shouldHave(text("ru.selenide.org"));
+    }
+
 /*    @Test
     void successfulLogoutTest(){
         open("https://auth.niffler.qa.guru/login");
