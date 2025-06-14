@@ -12,8 +12,8 @@ public class SearchTests {
 
     @BeforeEach
     public void setUp() {
-        Configuration.browser = "chrome"; // Браузер
-        Configuration.pageLoadStrategy = "eager"; // Стратегия загрузки страницы
+        Configuration.browser = "chrome"; // Конфигурация, установить браузер
+        Configuration.pageLoadStrategy = "eager"; // Конфигурация, стратегия загрузки страницы
     }
 
     @AfterEach
